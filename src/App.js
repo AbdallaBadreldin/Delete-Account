@@ -15,7 +15,8 @@ function App() {
                <Route path="/" element={<Home/>}/>
                <Route path="/login" element={<Login/>}/>
                <Route path="/delete" element={<Delete/>}/>
-              
+               <Route path="/Delete-Account" element={<Home/>}/>
+               <Route path="/*" element={<Home/>}/>
             </Routes>                    
         </section>
       </div>
