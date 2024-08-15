@@ -19,6 +19,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "firebaseBuild": "npm run build",
+    "firebaseDeploy": "npm ci",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

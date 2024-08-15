@@ -32,6 +32,7 @@ const Login = () => {
       const chatRoomsRef = ref(database, chatRoomsPath)
 
       onValue(lostItemsRef, (snapshot) => {
+        if(snapshot)
         snapshot.array.forEach(profileItem => {
           var pathRef = "/lostItems/" + profileItem.key
           var pathStor = "/LostItemsImages/" + profileItem.key
@@ -84,8 +85,7 @@ const Login = () => {
 
       'callback': (response) => {
         console.log(response);
-        onSignInSubmit(phoneNumber);
-
+        onSignInSubmit();
       },
       'expired-callback': () => {
         // var navigate = useNavigate();
@@ -95,7 +95,7 @@ const Login = () => {
   }
 
   const onSignInSubmit = (e) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
     setUpRecaptcha();
 
     const appVerifier = window.recaptchaVerifier;
@@ -105,7 +105,7 @@ const Login = () => {
         alert("OTP has been sent!");
       }).catch((error) => {
         console.error(error);
-        alert(error)
+        // alert(error)
       });
   };
 
