@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Delete-Account/static/css/main.e6c13ad2.css",
+    "main.js": "/Delete-Account/static/js/main.4f8a633e.js",
+    "static/js/453.8cb423df.chunk.js": "/Delete-Account/static/js/453.8cb423df.chunk.js",
+    "index.html": "/Delete-Account/index.html",
+    "main.e6c13ad2.css.map": "/Delete-Account/static/css/main.e6c13ad2.css.map",
+    "main.4f8a633e.js.map": "/Delete-Account/static/js/main.4f8a633e.js.map",
+    "453.8cb423df.chunk.js.map": "/Delete-Account/static/js/453.8cb423df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4f8a633e.js"
+  ]
+}
