@@ -101,6 +101,7 @@ const Login = () => {
     const appVerifier = window.recaptchaVerifier;
     signInWithPhoneNumber(auth, phoneNumber, appVerifier)
       .then((result) => {
+        setShow(null)
         setConfirmationResult(result);
         alert("OTP has been sent!");
       }).catch((error) => {
