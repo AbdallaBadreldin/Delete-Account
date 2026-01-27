@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Home from './page/Home';
 import Delete from './page/Delete.js';
 import Login from './page/Login.js';
-import { BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import {Routes, Route} from 'react-router-dom';
  
 function App() {
